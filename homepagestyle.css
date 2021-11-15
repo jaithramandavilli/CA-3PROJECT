@@ -1,0 +1,343 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+   
+  
+}
+/* 1 */
+.banner
+{
+    width:100%;
+    height:100vh;
+    background-image: url('foo1.jpg');
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: slide 20s infinite;
+}
+.load{
+    animation: slide 2s;
+}
+@keyframes slide
+{
+   0%{
+       background-image: url("foo1.jpg");
+       
+   }
+   20%{
+        background-image: url("foo1.jpg");
+ 
+   }
+   20.01%{
+       background-image: url("foo2.jpg");
+   }
+   40%{
+    background-image: url("foo2.jpg");
+   }
+   40.1%{
+    background-image: url("foo3.jpg");
+   }
+   60%{
+    background-image: url("foo3.jpg");
+    }
+   60.1%{
+    background-image: url("foo4.jpg");
+    }
+   80%{
+    background-image: url("foo4.jpg");
+   }
+   80.1%{
+    background-image: url("foo5.png");
+    } 
+   100%{
+    background-image: url("foo5.png");
+    }
+}
+.pic{
+   width:280px;
+   cursor:pointer;
+}
+h2{
+    color:whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.navbar
+{
+  width:85%;
+  margin:auto;
+  padding:35px 0;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.navbar ul li
+{
+   list-style:none;
+   display:inline-block;
+   margin:0 20px;
+   position: relative;
+   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-style: bold;
+   font-size:17px'
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 19px;
+    
+}
+.navbar ul li::after{
+    content:'';
+    height:3px;
+    width:0;
+    background: #009688;
+    position: absolute;
+    left:0;
+    bottom:-10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after
+{
+    width:100%;
+}
+.note{
+     margin-top: 310px;
+     margin-left: 35%;
+      position: absolute;
+      color:white;
+      font-size: 20px;
+      font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-weight: 400;
+}
+.btn{
+    margin-top:380px;
+    font-size: 40px;
+    border-radius: 100px;
+    background-color:black;
+    color:whitesmoke;
+    font-family:sans-serif;
+    padding:10px 20px;
+    letter-spacing: 0.6px;
+    cursor: pointer;
+}
+/* 2 */
+h1{
+  margin-top:100px;
+  font-family: 'Roboto Slab', serif;
+  font-size:35px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns:450px 450px 450px;
+    grid-template-rows: 500px;
+    grid-gap: 15px;
+    background-color:white;
+    padding: 10px;
+    font-family:'Lucida Grande';
+    height: 100px;
+    margin-left:75px;
+  }
+  .grid-container > div {
+    background-color:white;
+    border: 5px solid gainsboro;
+    text-align: center;
+    font-size: 30px;
+    border-radius:15px;
+  }
+  .container{
+    margin-left:0px;
+    margin-top:50px;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+   display: block;    
+    }
+  .container:hover .image{
+      opacity:0.3;
+      cursor: pointer;
+  }
+  
+  .text-title{
+      color:#00b7ff;
+      text-align: center;
+      
+  }
+   .circle{
+      height: 50px;
+      width: 70px;
+      background-color:green;
+      border-radius: 30%;
+      display: inline-block;
+      padding: 10px;
+      font-family: sans-serif;
+      color:whitesmoke;
+      font-size: 30px;
+  }
+  .smallText{
+      color:gray;
+      font-size: 20px;
+      
+  }
+  /* 3 */
+.list-head{
+    color:black;
+    font-family: 'Roboto Slab', serif;
+    margin-top: 930px;
+    font-size:35px;
+}
+.testimonials{
+	margin-top:0px;
+	padding:25px;
+	width:100%;
+	height:100%;
+	font-family:sans-serif;
+/* 	background-color:#262626; */
+	background: #ee0979;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ee0979 ,#ff6a00);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ee0989, #ff6f00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.testimonials{
+	margin:200px auto 100px;
+    margin-top:10px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    margin-bottom: 10px;
+	display:grid;
+	grid-template-columns: repeat(auto-fit,minmax(350px, 1fr));
+	grid-gap:20px;
+}
+.testimonials .card{
+	position:relative;
+	width:350px;
+	margin:0 auto;
+	background:#333;
+	padding:20px;
+	box-sizing: border-box;
+	text-align:center;
+	box-shadow:0 10px 40px rgba(0,0,0,.5);
+	overflow: hidden;
+}
+.testimonials .card .layer{
+	position: absolute;
+	top: calc(100% - 3px);
+	width:100%;
+	height:100%;
+	left:0;
+	background:linear-gradient(#03a9f4, #e81dd3);
+	z-index:1;
+	transition:0.5s;
+}
+.testimonials .card:hover .layer{
+	top:0;
+}
+.testimonials .card .content{
+	position:relative;
+	z-index:2;
+}
+.testimonials .card .content p{
+	font-size:18px;
+	line-height:24px;
+	color:#FFF;
+}
+.testimonials .card .content .image{
+	width:100px;
+	height:100px;
+	margin: 0 auto;
+	border-radius:50%;
+	overflow:hidden;
+	box-shadow: 0 10px 20px rgba(0,0,0, .2);
+}
+.testimonials .card .content .details h2{
+	font-size:15px;
+	color:#fff;
+}
+.testimonials .card .content .details h2 span{
+	color:#03a9f4;
+	font-size:12px;
+	transition:0.5s;
+}
+.testimonials .card:hover .content .details h2 span{
+	color:#fff;
+}
+/* 4 */     
+.aboutus{
+    margin-top: 0px;
+}
+.aboutus{
+    background-image: url("abt.jpg");
+    filter: brightness(0.9);
+    width:100%;
+    height: 100vh;
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+.abth{
+    font-family: cursive;
+    font-size:50px;
+    color:white;
+    position:absolute;
+    top:150px;
+    left:440px;
+    border-bottom:2px solid ghostwhite;
+}
+.abtc{
+    position:absolute;
+    top: 240px;
+     left:470px;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-size:35px;
+     color:white;
+}
+.fb{
+    position:absolute;
+    top:390px;
+    left:490px;
+}
+.insta{
+    position:absolute;
+    top:390px;
+    left:600px;
+}
+.mail{
+    position:absolute;
+    top:390px;
+    left:700px;
+
+}
+.wh{
+    position:absolute;
+    top:390px;
+    left:800px;
+   
+}
+.number{
+    position:absolute;
+    top:400px;
+    font-size: 30px;
+    left:870px;
+    color: white;
+}
+ .maps{
+     border-radius: 10px;
+     margin-top:50px;
+     margin-left: 20px;
+ }
+ .fnote{
+    font-weight: 200;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    margin-top:300px;
+}
+

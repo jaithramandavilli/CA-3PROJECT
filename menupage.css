@@ -1,0 +1,319 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+/* navbar */
+.navbar_name{
+    background-color: orange;
+    color:whitesmoke;
+    font-family: 'Encode Sans SC', sans-serif;
+    font-family: 'Zen Tokyo Zoo', cursive;
+    text-align: center;
+    font-size:40px;
+    padding:40px;
+    border-radius: 15px 0 15px 0;
+    margin:10px 20px 15px 20px;
+    letter-spacing: 2px;
+}
+.navbar_name span{
+    font-size:30px;
+}
+.navbar_items{
+    background-color: orange;
+    overflow:auto;
+    padding:20px;
+    margin-left:20px;
+    margin-right: 20px;
+    border-radius: 0px 15px 0px 15px;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 35px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+    grid-gap:5px;
+    position:absolute;
+    width:97%;
+    margin-top: 10px;
+}
+.navbar_items a{
+    background-color: orange;
+    color:whitesmoke;
+    border:1px solid white;
+    display:grid;
+    padding: 10px;
+    text-decoration: none;
+    font-family: 'Encode Sans SC', sans-serif;
+    font-family: 'Zen Tokyo Zoo', cursive;
+    letter-spacing: 2px;
+    font-size: 40px;
+}
+.navbar_items a:hover, .navbar_items a:active {
+    background-color: red;
+  }
+  .cartbtn{
+    margin-left:100px;
+    width:90px;
+    height: 40px;
+    float: right;
+    position: relative;
+    cursor: pointer;
+  }
+  .cartbtn span{
+    position: absolute;
+    right:-0rem;
+    bottom:0.5rem;
+    font-size: 27px;
+    color:blue;
+    font-family: monospace;
+    padding-left: 40px;
+  }
+  .cartbtn a{
+    color:black;
+  }
+  .top{
+    border-radius: 100%;
+    width: 4%;
+    font-size: 10px;
+    color: black;
+    border:2px solid orange;
+   position: fixed;
+   margin-top: 40px;
+   margin-left: 3rem;
+  }
+  /* menu */
+  .veg_text{
+    font-family: 'Encode Sans SC', sans-serif;
+      font-size : 35px;
+      text-shadow :10px solid black;
+      text-align: center;
+      color:red;
+  }
+  h1{
+    text-align:center;
+  }
+  .menu{
+      display:grid;
+      grid-template-columns:330px 330px 330px 330px;
+      grid-auto-rows: minmax(450px, 2 fr);
+      background-color: pink;
+      border-radius: 15px;
+      margin-left:30px;
+      margin-right: 25px;
+      gap:15px;
+      width:90%;
+      height: 10%;   
+  }
+  .veg_grid img{
+      margin-top:20px;
+      width: 100%;
+      width:250px;
+      border-radius:50%;
+      display:block;
+      height: 250px;
+      margin-left: 45px;
+  }
+  .details{
+      padding:20px;
+  }
+  .subdetails h1{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+            padding: 7px 65px;         
+  }
+  .subdetails button{
+      border-radius: 15px;
+      margin:10px 15px 0px 15px;
+      font-family: monospace;
+      padding: 10px;
+      width:75%;
+      background-color: black;
+      color: whitesmoke;
+      font-size: 15px;
+      margin-right :12.5%;
+      margin-left:12.5%;
+      border:5px solid gray;
+  }
+  .subdetails button:hover,.subdetails button:active {
+    background-color:green;
+    cursor:pointer;
+  }
+  .price{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-align:center;
+      margin-top:0px;
+      font-size: 15px;
+      color:#a69594;
+  }
+/* end of menu */
+  /* cartpage */
+  /* navbar for cart page */
+.foodimg{
+  background-size: cover;
+  background-repeat: repeat;
+}
+.heading{
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 200px;
+  position: relative;
+}
+
+.overlay{
+  position:absolute;
+  z-index:1;
+  top:0;
+  left:0;
+  height:100%;
+  right:0;
+  bottom:0;
+  padding:0 !important;
+  margin:0 !important;
+ 
+}
+.navi{
+  position: absolute;
+  top:0;
+  right: 0;
+  left:0;
+  z-index:2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding:50px 60px 0 60px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navi li{
+  list-style: none;
+  display: inline-block;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: 27px;
+}
+.navi li span{
+  padding-left: 5px;
+}
+.navi li a {
+  padding:5px;
+  background-color: white;
+  text-decoration: blueviolet;
+}
+/* cartitems */
+.products-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top:50px;
+  padding-bottom: 100px;
+  max-width:1300px;
+  justify-content: space-around;
+  margin:0 auto;
+  margin-top: 50px;
+  font-size:30px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.products-container ion-icon{
+  font-size: 25px;
+  color:blue;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+ 
+}
+.product-header{
+   width: 100%;
+   max-width:1300px;
+   display: flex;
+   justify-content: flex-start;
+   border-bottom: 4px solid lightgray;
+   margin:0 auto;
+}
+.product-title{
+  width:45%;
+}
+.amt{
+  width:15%;
+  display: flex;
+  align-items: center;
+}
+.thequantity{
+  width:28%;
+  display: flex;
+  align-items: center;
+}
+.total
+{
+  width:12%;
+  display: flex;
+  align-items: center; 
+}
+.products{
+  width:100%;
+  align-items: left;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left:0px;
+}
+.products img{
+  width:90px;
+  height:80px;
+  margin-left:0px;
+  border-radius:10px;
+  margin-right: 40px;
+  margin-left:20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.orderbtn button {
+  width:25%;
+  cursor: pointer;
+  border-radius: 15px;
+  color:white;
+  border:2px solid whitesmoke;
+  font-size: 25px;
+  height:70px;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+button :hover, button :active  {
+  background-color:blue;
+}
+.thanks p{
+  margin-top: 30px;
+  text-align: center;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 40px;
+  color: blue;
+}
+.orderbtn button{
+  text-decoration: none;
+  background-color:blue;
+  margin-left:35%;
+  align-items:center;
+  border:2px solid whitesmoke;
+}
+.orderbtn button:hover{
+  transform: scale(1.005);
+  background-color:#1872cc;
+}
+/* maincart js */
+.product{
+  width:45%;
+  display:-ms-flexbox;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 10px;
+}
+.product ion-icon{
+  cursor: pointer;
+}
+.baskettotaltitle{
+  font-weight: 200;
+  padding-left: 780px;
+}
+.baskettotal{
+  font-weight: 800;
+  padding-left: 10px;
+}
